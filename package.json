@@ -1,0 +1,21 @@
+{
+  "name": "some_name",
+  "version": "1.0.0",
+  "description": "",
+  "main": "vite.config.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "vite --open --host",
+    "build": "vite build",
+    "preview": "vite preview --open --host",
+    "predeploy": "npm run build",
+    "deploy": "surge ./dist yourfrontenddomain.surge.sh",
+    "postdeploy": "start https://yourfrontenddomain.surge.sh"
+  },
+  "author": "David Verhulst",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5",
+    "vite": "^5.0.6"
+  }
+}
